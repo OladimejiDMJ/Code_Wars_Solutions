@@ -1,0 +1,8 @@
+def number(bus_stops):
+    people=0
+    i=0
+    for x in bus_stops:
+        if i < len(bus_stops):
+            people+= bus_stops[i][0] - bus_stops[i][1]
+            i+=1
+    return people
